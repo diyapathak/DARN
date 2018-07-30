@@ -67,7 +67,7 @@ chrome.storage.sync.get("spoilerItem", function (results)
     searchForSpoilers();
 
     $('#submit-button').click(function (evt){
-      itemToAdd = $('#block-item').val().toLowerCase();
+      itemToAdd = $('#block-item').val();
       if(itemToAdd === "")
       {
         alert("That isn't a word! Please enter a new search term.");
