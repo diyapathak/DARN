@@ -4,31 +4,22 @@
 
   <head>
     <title>DARN!</title>
-    <style>
-      body
-      {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-
-      .search-found
-      {
-        text-decoration: underline;
-      }
-      </style>
-      <script src ="jquery-3.0.0.min.js"></script>
-      <script src ="popup.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+    <script src ="jquery-3.0.0.min.js"></script>
+    <script src ="popup.js"></script>
 
   </head>
 
   <body>
     <div id="form">
-      <label>Input</label>
-      <input type="text" id="block-item">
-      <input id="submit-button" type="submit" value="submit">
+      <center><h1> DARN! </h1></center>
+      <center><h3>Block spoilers from your favorite book, movie, game, or TV show!</h3></center>
+      <center><h3> What should we look for? </h3></center>
+      <center><input type="text" id="block-item"><center>
+      <input id="submit-button" type="submit" value="Submit">
     </div>
+    <br>
     <div id="listView"></div>
-    <input id="clear-button" type="submit" value="clear">
   </body>
 
 </html>
