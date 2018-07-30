@@ -1,0 +1,39 @@
+
+html *{
+  background-color:	#e3f2f3;
+  font-family: sans-serif;
+  color:#376595;
+}
+h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  color: #ff5c5c;
+}
+body {
+  min-width: 400px; /* your desired width */
+  max-width: 100%;
+  height: 200px;
+  position: relative;
+}
+ul {
+    margin: 5px;
+}
+
+#userInput{
+    background-color:#ffffff;
+}
+
+#button{
+    background-color: #ff5c5c;
+    color:#e3f2f3;
+}
+li {
+    display: inline;
+    background:#ffffff;
+    border: 1px solid #999;
+    padding: 5px;
+    cursor: pointer;
+}
+.close:hover {background:#ff5c5c;}
+.close {
+    background-color: #ffffff;
+}
