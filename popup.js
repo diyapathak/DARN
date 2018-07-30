@@ -34,11 +34,15 @@ function searchForSpoilers()
   {
     var searchString = '';
     spoilerList["spoilerItem"].forEach(function (item){
+      // searchString = searchString + "div:contains('" + item + "'), ";
       searchString = searchString + "p:contains('" + item + "'), ";
+
       console.log(searchString);
     });
     searchString = searchString.substring(0, searchString.length - 2);
-    $(searchString).parents('.userContentWrapper').css('-webkit-filter', 'blur(5px)');
+    // console.log($(searchString).parents());
+    $(searchString).css('-webkit-filter', 'blur(5px)');
+    // $(searchString).parents('.userContentWrapper').css('-webkit-filter', 'blur(5px)');
   }
 }
 
@@ -92,21 +96,21 @@ chrome.storage.sync.get("spoilerItem", function (results)
     });
 
     $(document).on('click', '.spoilerListItem', function (item){
-      $('p:contains(' + item.currentTarget.innerHTML + ')').parents('.userContentWrapper').css('-webkit-filter', '');
+      $('div:contains(' + item.currentTarget.innerHTML + ')').parents('.userContentWrapper').css('-webkit-filter', '');
       spoilerList["spoilerItem"].splice($.inArray(item.currentTarget.innerHTML, spoilerList["spoilerItem"]), 1);
       saveSpoilerList();
       updateListView();
       searchForSpoilers();
     });
 
-    var observer = new MutationObserver(function (mutations, observer){
-      searchForSpoilers();
-    });
-
-    observer.observe($('[id^=topnews_main_stream_]').get(0), {
-      subtree: true,
-      attributes: true
-    });
+    // var observer = new MutationObserver(function (mutations, observer){
+    //   searchForSpoilers();
+    // });
+    //
+    // observer.observe($('[id^=topnews_main_stream_]').get(0), {
+    //   subtree: true,
+    //   attributes: true
+    // });
 
   });
   // end of jquery
