@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "No Spoiler",
-  "description": "Custom spoiler filter",
+  "name": "DARN!",
+  "description": "Block spoilers from your favorite book, movie, game, or TV show!",
   "version": "0.0",
   "browser_action": {
     "default_popup": "popup.html",
