@@ -6,17 +6,17 @@
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-       "16": "images/meap16.png",
-       "32": "images/meap32.png",
-       "48": "images/meap48.png",
-       "128": "images/meap128.png"
+       "16": "images/stuff16.png",
+       "32": "images/stuff32.png",
+       "48": "images/stuff48.png",
+       "128": "images/stuff128.png"
      }
   },
   "icons": {
-     "16": "images/meap16.png",
-     "32": "images/meap32.png",
-     "48": "images/meap48.png",
-     "128": "images/meap128.png"
+     "16": "images/stuff16.png",
+     "32": "images/stuff32.png",
+     "48": "images/stuff48.png",
+     "128": "images/stuff128.png"
   },
   "permissions": [
     "activeTab",
